@@ -14,7 +14,7 @@ export const projects: Project[] = [
     techStack: ["Node.js", "Express", "PostgreSQL", "Docker"],
     repo: "https://github.com/henzg/portfolio-redo",
     demo: "https://portfolio-redo-psi.vercel.app/",
-    image: "../public/PortfolioPic.png"
+    image: "PortfolioPic.PNG"
   }
   // {
   //   title: "Portfolio Website",
