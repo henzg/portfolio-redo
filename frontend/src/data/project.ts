@@ -15,26 +15,26 @@ export const projects: Project[] = [
     repo: "https://github.com/yourname/api-integration-hub",
     demo: "https://api.yourdomain.com",
     image: "/placeholder.png"
-  },
-  {
-    title: "Portfolio Website",
-    description: "This portfolio site built with Next.js, Express, and Docker.",
-    techStack: ["Next.js", "TypeScript", "Docker Compose"],
-    repo: "https://github.com/yourname/portfolio",
-    image: "/placeholder.png"
-  },
-  {
-    title: "Test",
-    description: "This is a test entry",
-    techStack: ["Next.js", "TypeScript", "Docker Compose"],
-    repo: "https://github.com/yourname/portfolio",
-    image: "/placeholder.png"
-  },
-    {
-    title: "Test",
-    description: "This is a test entry",
-    techStack: ["Next.js", "TypeScript", "Docker Compose"],
-    repo: "https://github.com/yourname/portfolio",
-    image: "/placeholder.png"
-  }    
+  }
+  // {
+  //   title: "Portfolio Website",
+  //   description: "This portfolio site built with Next.js, Express, and Docker.",
+  //   techStack: ["Next.js", "TypeScript", "Docker Compose"],
+  //   repo: "https://github.com/yourname/portfolio",
+  //   image: "/placeholder.png"
+  // },
+  // {
+  //   title: "Test",
+  //   description: "This is a test entry",
+  //   techStack: ["Next.js", "TypeScript", "Docker Compose"],
+  //   repo: "https://github.com/yourname/portfolio",
+  //   image: "/placeholder.png"
+  // },
+  //   {
+  //   title: "Test",
+  //   description: "This is a test entry",
+  //   techStack: ["Next.js", "TypeScript", "Docker Compose"],
+  //   repo: "https://github.com/yourname/portfolio",
+  //   image: "/placeholder.png"
+  // }    
 ];
