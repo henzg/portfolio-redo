@@ -8,7 +8,7 @@ export default function About() {
         <div>
           <h2 className="text-4xl font-bold mb-6 text-[var(--color-primary)]">About Me</h2>
           <p className="text-lg leading-relaxed mb-4 text-[var(--color-accent-black)]">
-            I&apos;sm a <span className="font-semibold">Backend Developer</span> and <span className="font-semibold">Platform Engineer</span> who thrives on building efficient, scalable APIs and deploying applications through modern DevOps practices.
+            I&apos;m a <span className="font-semibold">Backend Developer</span> and <span className="font-semibold">Platform Engineer</span> who thrives on building efficient, scalable APIs and deploying applications through modern DevOps practices.
           </p>
           <p className="text-lg leading-relaxed secondary-text">
             With hands-on experience in <span className="font-semibold">Docker</span>, <span className="font-semibold">CI/CD pipelines</span>, and cloud infrastructure, I create systems that power products from the ground up — and keep them running smoothly.
