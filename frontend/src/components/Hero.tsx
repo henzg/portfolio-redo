@@ -5,7 +5,7 @@ export default function Hero() {
             <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[var(--color-accent-cream)] opacity-20 rounded-full blur-3xl animate-pulse z-0" />
             <div className="max-w-3xl mx-auto relative z-10">
                 <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-[var(--color-accent-white)] drop-shadow-lg">
-                    Hi, I'm <span className="text-[var(--color-accent-coral)]">Zac</span>
+                    Hi, I&apos;sm <span className="text-[var(--color-accent-coral)]">Zac</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light mb-8 text-[var(--color-text-light)] opacity-90">
                     I make integrating systems painless for you.

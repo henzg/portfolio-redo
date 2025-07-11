@@ -11,7 +11,7 @@ export default function Contact() {
           {/* Warm Message */}
           <div className="mb-2 text-center md:text-left">
             <h2 className="text-3xl font-bold text-[var(--color-accent-coral)] mb-1">Contact Me</h2>
-            <p className="text-[var(--color-text-secondary)] text-base">I'd love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.</p>
+            <p className="text-[var(--color-text-secondary)] text-base">I&apos;sd love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.</p>
           </div>
           {/* Contact Info */}
           <div className="space-y-1 text-[var(--color-accent-black)]">
