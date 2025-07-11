@@ -9,12 +9,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "API Integration Hub",
-    description: "A Node.js + PostgreSQL backend app for syncing external APIs into a centralized DB.",
+    title: "Personal Portfolio",
+    description: "A Next.js frontend app for syncing external APIs into a centralized DB.",
     techStack: ["Node.js", "Express", "PostgreSQL", "Docker"],
-    repo: "https://github.com/yourname/api-integration-hub",
-    demo: "https://api.yourdomain.com",
-    image: "/placeholder.png"
+    repo: "https://github.com/henzg/portfolio-redo",
+    demo: "https://portfolio-redo-psi.vercel.app/",
+    image: "/PortfolioPic.png"
   }
   // {
   //   title: "Portfolio Website",
