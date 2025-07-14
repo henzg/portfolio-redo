@@ -18,9 +18,9 @@ export const projects: Project[] = [
   },
   {
     title: "Stock Market Dashboard",
-    description: "This portfolio site built with Next.js, Express, and Docker.",
+    description: "A webapp utilizing technologies so users can create their stock portfolios with live trading data.2 Demo coming soon",
     techStack: ["Next.js", "TypeScript", "Node.js", "Docker", ],
-    repo: "https://github.com/yourname/portfolio",
+    repo: "https://github.com/henz/StockDashboardv2",
     image: "/StockDashBoard.PNG"
   },
   //   {
