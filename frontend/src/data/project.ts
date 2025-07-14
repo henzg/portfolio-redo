@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description: "This portfolio site built with Next.js, Express, and Docker.",
     techStack: ["Next.js", "TypeScript", "Node.js", "Docker", ],
     repo: "https://github.com/yourname/portfolio",
-    image: "/StockDashboard.PNG"
+    image: "/StockDashBoard.PNG"
   },
   //   {
   //   title: "Test",
