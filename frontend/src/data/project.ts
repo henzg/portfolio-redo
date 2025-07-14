@@ -14,15 +14,15 @@ export const projects: Project[] = [
     techStack: ["Next.js", "Vercel"],
     repo: "https://github.com/henzg/portfolio-redo",
     demo: "https://portfolio-redo-psi.vercel.app/",
-    image: "PortfolioPic.PNG"
-  }
-  // {
-  //   title: "Stock Market Dashboard",
-  //   description: "This portfolio site built with Next.js, Express, and Docker.",
-  //   techStack: ["Next.js", "TypeScript", "Docker Compose"],
-  //   repo: "https://github.com/yourname/portfolio",
-  //   image: "/placeholder.png"
-  // },
+    image: "/PortfolioPic.PNG"
+  },
+  {
+    title: "Stock Market Dashboard",
+    description: "This portfolio site built with Next.js, Express, and Docker.",
+    techStack: ["Next.js", "TypeScript", "Node.js", "Docker", ],
+    repo: "https://github.com/yourname/portfolio",
+    image: "/StockDashboard.PNG"
+  },
   //   {
   //   title: "Test",
   //   description: "This is a test entry",
