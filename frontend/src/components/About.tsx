@@ -25,14 +25,14 @@ export default function About() {
             <li className="flex items-start gap-3">
               <FaBriefcase className="text-[var(--color-accent-coral)] text-xl mt-1" />
               <div>
-                <p className="font-semibold">Platform Engineer — 53rd Bank</p>
+                <p className="font-semibold">Platform Engineer</p>
                 <p className="secondary-text">Managed deployments, built REST integrations, and maintained CI/CD systems.</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <FaDatabase className="text-[var(--color-primary)] text-xl mt-1" />
               <div>
-                <p className="font-semibold">Data Engineer — FIS</p>
+                <p className="font-semibold">Data Engineer</p>
                 <p className="secondary-text">Created and maintained ETL processes, and automated reports for stakeholders.</p>
               </div>
             </li>
@@ -47,7 +47,7 @@ export default function About() {
               <FaTools className="text-[var(--color-primary)] text-xl mt-1" />
               <div>
                 <p className="font-semibold">Favorite Technologies</p>
-                <p className="secondary-text">Python, Node.js, Express, PostgreSQL, MySql, Docker, Azure, Bash</p>
+                <p className="secondary-text">Python, Cpp, Node.js, SQL, Docker, Azure, Bash</p>
               </div>
             </li>
           </ul>
