@@ -39,7 +39,7 @@ export default function About() {
             <li className="flex items-start gap-3">
               <FaCode className="text-[var(--color-accent-coral)] text-xl mt-1" />
               <div>
-                <p className="font-semibold">Backend Developer — Freelance</p>
+                <p className="font-semibold">Freelance</p>
                 <p className="secondary-text">Built APIs and automated workflows for fintech and logistics projects.</p>
               </div>
             </li>

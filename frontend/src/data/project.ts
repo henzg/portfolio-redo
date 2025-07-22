@@ -21,13 +21,14 @@ export const projects: Project[] = [
     description: "A webapp utilizing technologies so users can create their stock portfolios with live trading data.2 Demo coming soon",
     techStack: ["Next.js", "TypeScript", "Node.js", "Docker", ],
     repo: "https://github.com/henz/StockDashboardv2",
+    demo: "Coming soon",
     image: "/StockDashBoard.PNG"
   },
-  //   {
-  //   title: "Test",
-  //   description: "This is a test entry",
-  //   techStack: ["Next.js", "TypeScript", "Docker Compose"],
-  //   repo: "https://github.com/yourname/portfolio",
-  //   image: "/placeholder.png"
-  // }    
+  {
+   title: "OpenGL Project",
+   description: "Learning how to use OpenGL in C++",
+   techStack: ["Visual Studio", "C++", "OpenGL"],
+   repo: "https://github.com/henzg/LearningOpenGL",
+   image: "/placeholder.png"
+  },    
 ];
