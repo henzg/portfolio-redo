@@ -29,6 +29,13 @@ export const projects: Project[] = [
    description: "Learning how to use OpenGL in C++",
    techStack: ["Visual Studio", "C++", "OpenGL"],
    repo: "https://github.com/henzg/LearningOpenGL",
-   image: "/placeholder.png"
-  },    
+   image: "/placeholder.png" 
+  },
+  {
+   title: "PONG",
+   description: "Recreating the classic game while I learn SFML.",
+   techStack: ["Visual Studio", "C++", "SFML"],
+   repo: "https://github.com/henzg/Pong",
+   image: "/placeholder.png" 
+  },        
 ];
