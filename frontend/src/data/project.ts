@@ -42,6 +42,7 @@ export const projects: Project[] = [
    title: "RTS in Unreal Engine",
    description: "Creating a prototype RTS game using unreal engine 5.6",
    techStack: ["Visual Studio", "C++", "UE"],
-   image: "/rtspic1.png" 
+   repo: "https://github.com/henzg/ue5_rtscamera/tree/main",
+   image: "/rtspic1.png"
   },        
 ];
