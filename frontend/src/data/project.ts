@@ -29,7 +29,7 @@ export const projects: Project[] = [
    description: "Learning how to use OpenGL in C++",
    techStack: ["Visual Studio", "C++", "OpenGL"],
    repo: "https://github.com/henzg/LearningOpenGL",
-   image: "/placeholder.png" 
+   image: "/openglproject.png" 
   },
   {
    title: "PONG",
@@ -37,5 +37,11 @@ export const projects: Project[] = [
    techStack: ["Visual Studio", "C++", "SFML"],
    repo: "https://github.com/henzg/Pong",
    image: "/placeholder.png" 
+  },
+  {
+   title: "RTS in Unreal Engine",
+   description: "Creating a prototype RTS game using unreal engine 5.6",
+   techStack: ["Visual Studio", "C++", "UE"],
+   image: "/rtspic1.png" 
   },        
 ];
