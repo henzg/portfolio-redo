@@ -1,4 +1,4 @@
-import { FaBriefcase, FaDatabase, FaCode, FaTools } from 'react-icons/fa';
+import { FaBriefcase, FaGamepad, FaCode, FaTools } from 'react-icons/fa';
 
 export default function About() {
   return (
@@ -8,10 +8,10 @@ export default function About() {
         <div>
           <h2 className="text-4xl font-bold mb-6 text-[var(--color-primary)]">About Me</h2>
           <p className="text-lg leading-relaxed mb-4 text-[var(--color-accent-black)]">
-            I&apos;m a <span className="font-semibold">Backend Developer</span> and <span className="font-semibold">Platform Engineer</span> who thrives on building efficient, scalable APIs and deploying applications through modern DevOps practices.
+            I&apos;m a <span className="font-semibold">Software Engineer</span> and <span className="font-semibold">Game Developer</span> passionate about creating immersive experiences through low-level programming and real-time graphics.
           </p>
           <p className="text-lg leading-relaxed secondary-text">
-            With hands-on experience in <span className="font-semibold">Docker</span>, <span className="font-semibold">CI/CD pipelines</span>, and cloud infrastructure, I create systems that power products from the ground up — and keep them running smoothly.
+            With expertise in <span className="font-semibold">C++</span>, <span className="font-semibold">OpenGL</span>, and <span className="font-semibold">Unreal Engine</span>, I build everything from graphics engines to complete game systems — turning ideas into interactive realities.
           </p>
         </div>
 
@@ -26,11 +26,11 @@ export default function About() {
               <FaBriefcase className="text-[var(--color-accent-coral)] text-xl mt-1" />
               <div>
                 <p className="font-semibold">Platform Engineer</p>
-                <p className="secondary-text">Managed deployments, built REST integrations, and maintained CI/CD systems.</p>
+                <p className="secondary-text">Managed deployments, built REST integrations, and maintained a risk application.</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <FaDatabase className="text-[var(--color-primary)] text-xl mt-1" />
+              <FaGamepad className="text-[var(--color-primary)] text-xl mt-1" />
               <div>
                 <p className="font-semibold">Data Engineer</p>
                 <p className="secondary-text">Created and maintained ETL processes, and automated reports for stakeholders.</p>
@@ -39,15 +39,15 @@ export default function About() {
             <li className="flex items-start gap-3">
               <FaCode className="text-[var(--color-accent-coral)] text-xl mt-1" />
               <div>
-                <p className="font-semibold">Freelance</p>
-                <p className="secondary-text">Built APIs and automated workflows for fintech and logistics projects.</p>
+                <p className="font-semibold">Graphics Programming</p>
+                <p className="secondary-text">Building real-time rendering systems and learning advanced graphics techniques.</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
               <FaTools className="text-[var(--color-primary)] text-xl mt-1" />
               <div>
                 <p className="font-semibold">Favorite Technologies</p>
-                <p className="secondary-text">Python, Cpp, Node.js, SQL, Docker, Azure, Bash</p>
+                <p className="secondary-text">C++, OpenGL, Unreal Engine, Visual Studio, Python,SQL</p>
               </div>
             </li>
           </ul>

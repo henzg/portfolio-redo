@@ -8,10 +8,10 @@ export default function Hero() {
                     Hi, I&apos;m <span className="text-[var(--color-accent-coral)]">Zac</span>
                 </h1>
                 <p className="text-xl md:text-2xl font-light mb-8 text-[var(--color-text-light)] opacity-90">
-                    I make integrating systems painless for you.
+                    Software Engineer & Game Developer
                 </p>
-                <p className="text-xl md:text-2xl font-light mb-8 text-[var(--color-text-light)] opacity-80">
-                    My website is currently under construction so please be patient!
+                <p className="text-lg md:text-xl font-light mb-8 text-[var(--color-text-light)] opacity-80">
+                    Crafting immersive experiences with C++, OpenGL, and Unreal Engine
                 </p>
                 <a href="#projects" className="inline-block px-8 py-3 rounded-lg bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] font-semibold shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-[var(--color-primary)] hover:text-white">
                     View My Work
