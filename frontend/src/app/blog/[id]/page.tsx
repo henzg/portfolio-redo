@@ -1,15 +1,17 @@
 import BlogPost from '../../../components/BlogPost';
 
 interface BlogPostPageProps {
-    params: {
+    params: Promise<{
         id: string;
-    };
+    }>;
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+    const { id } = await params;
+    
     return (
         <main>
-            <BlogPost postId={params.id} />
+            <BlogPost postId={id} />
         </main>
     );
 } 
