@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="bg-[var(--color-accent-cream)] py-12 px-2 sm:px-4 md:px-8">
+    <section className="bg-[var(--color-primary-dark)] py-12 px-2 sm:px-4 md:px-8">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left: Avatar and Contact Info */}
         <div className="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
@@ -10,20 +10,20 @@ export default function Contact() {
           </div>
           {/* Warm Message */}
           <div className="mb-2 text-center md:text-left">
-            <h2 className="text-3xl font-bold text-[var(--color-accent-coral)] mb-1">Contact Me</h2>
-            <p className="text-[var(--color-text-secondary)] text-base">I&apos;d love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.</p>
+            <h2 className="text-3xl font-bold text-[var(--color-accent-white)] mb-1">Contact Me</h2>
+            <p className="text-[var(--color-text-light)] text-base opacity-90">I&apos;d love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.</p>
           </div>
           {/* Contact Info */}
-          <div className="space-y-1 text-[var(--color-accent-black)]">
+          <div className="space-y-1 text-[var(--color-accent-white)]">
             <p>
               <span className="font-semibold">Email:</span>{' '}
-              <a href="mailto:zacghenry@yahoo.com" className="text-[var(--color-primary)] underline hover:text-[var(--color-accent-coral)] transition">
+              <a href="mailto:zacghenry@yahoo.com" className="text-[var(--color-accent-coral)] underline hover:text-[var(--color-accent-cream)] transition">
                 zacghenry@yahoo.com
               </a>
             </p>
             <p>
               <span className="font-semibold">LinkedIn:</span>{' '}
-              <a href="https://www.linkedin.com/in/zac-henry/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)] underline hover:text-[var(--color-accent-coral)] transition">
+              <a href="https://www.linkedin.com/in/zac-henry/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-accent-coral)] underline hover:text-[var(--color-accent-cream)] transition">
                 linkedin.com/in/zac-henry/
               </a>
             </p>
