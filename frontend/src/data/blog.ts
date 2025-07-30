@@ -172,5 +172,105 @@ The combination of UE5's power and my growing C++ skills is opening up exciting 
         date: "2024-03-05",
         tags: ["Unreal Engine 5", "C++", "RTS", "Game Development"],
         readTime: "4 min read"
+    },
+    {
+        id: "camera-zoom-implementation",
+        title: "Implementing Smooth Camera Zoom in Unreal Engine 5",
+        excerpt: "A detailed breakdown of implementing zoom in/out functionality with smooth transitions using curves and input actions.",
+        content: `
+# Implementing Smooth Camera Zoom in Unreal Engine 5
+
+Building on my RTS camera system, I've successfully implemented smooth zoom in and out functionality. This feature is crucial for RTS games, allowing players to get both tactical close-up views and strategic overviews of the battlefield.
+
+## Input System Setup
+
+The foundation of the zoom system starts with proper input configuration:
+
+### Input Actions Created
+- **IA_ZoomIn**: Digital Bool action for zooming in
+- **IA_ZoomOut**: Digital Bool action for zooming out  
+- **IA_ZoomReset**: Digital Bool action for resetting zoom to default
+- **LeftCtrlModifier**: Digital Bool modifier for chorded actions
+
+### Input Mapping
+All actions are mapped through the **IMC_CameraMove** input mapping context, with the reset action configured as a chorded action using the LeftCtrlModifier for intuitive control.
+
+## Smooth Zoom with Curve Assets
+
+To achieve natural-feeling zoom transitions, I created a **Float Curve** asset:
+
+### Curve Configuration
+- **Key Points**: (0, 1350) and (1, 300)
+- **Curve Type**: Cubic with flat tangents
+- **Purpose**: Maps zoom input (0-1) to camera arm length (300-1350)
+
+This curve provides smooth interpolation between zoom levels, avoiding the jarring linear transitions that can make camera movement feel robotic.
+
+## Blueprint Implementation
+
+### BP_TopDownCamera
+The camera blueprint contains the core zoom logic:
+
+**SetArmLength(float ZoomAmount)**
+- Uses the CurveZoomLength to evaluate the zoom amount
+- Applies the result to the Camera Boom's Target Arm Length
+- This creates the actual zoom effect by adjusting the camera distance
+
+### BP_PawnMovementComp
+The movement component handles zoom state management:
+
+**ZoomIn()**
+- Increments DeltaZoomAmount using Lerp for smooth transitions
+- Updates the ZoomAmount variable
+- Calls SetArmLength on the CameraPawnRef with the new value
+
+**ZoomOut()**
+- Decrements DeltaZoomAmount using Lerp
+- Updates ZoomAmount
+- Calls SetArmLength similarly
+
+**ResetZoom()**
+- Resets DeltaZoomAmount to 0.5 (the midpoint of our curve)
+- Provides a quick way to return to the default view
+
+**ZoomEvents()**
+- Centralized function called each tick
+- Applies the current zoom state
+- Designed to handle future camera features like panning and POV changes
+
+## Player Controller Integration
+
+The **BP_PlayerController** maps the input actions to their respective functions:
+- IA_ZoomIn → ZoomIn()
+- IA_ZoomOut → ZoomOut()
+- IA_ZoomReset → ResetZoom()
+
+This creates a clean separation between input handling and camera logic.
+
+## Runtime Updates
+
+The system calls **ZoomEvents()** from the Event Tick in BP_PawnMovementComp, ensuring that zoom changes are applied in real-time. This approach allows for smooth, responsive camera control that feels natural to players.
+
+## Technical Benefits
+
+This implementation provides several advantages:
+- **Smooth Transitions**: The curve-based approach eliminates jarring camera movements
+- **Scalable Design**: The centralized ZoomEvents function can easily accommodate additional camera features
+- **Performance Optimized**: Efficient updates that don't impact frame rate
+- **User-Friendly**: Intuitive controls with reset functionality
+
+## Future Enhancements
+
+With this foundation in place, I'm planning to add:
+- Zoom speed customization
+- Zoom bounds based on map size
+- Smooth camera panning
+- Camera rotation around focal points
+
+This zoom system forms a solid foundation for the complete RTS camera experience!
+        `,
+        date: "2024-03-20",
+        tags: ["Unreal Engine 5", "Blueprints", "Camera System", "RTS", "Game Development"],
+        readTime: "6 min read"
     }
 ]; 
