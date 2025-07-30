@@ -16,7 +16,7 @@ export default function BlogList({ showAll = false }: BlogListProps) {
                 </h2>
                 <p className="text-lg text-center mb-12 text-[var(--color-accent-black)] opacity-80 max-w-3xl mx-auto">
                     Documenting my journey in game development, graphics programming, and software engineering. 
-                    From OpenGL basics to Unreal Engine projects, here's what I'm learning along the way.
+                    From OpenGL basics to Unreal Engine project&apos;s, here&apos;s what Im learning along the way.
                 </p>
                 
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
