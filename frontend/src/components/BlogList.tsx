@@ -6,7 +6,9 @@ interface BlogListProps {
 }
 
 export default function BlogList({ showAll = false }: BlogListProps) {
-    const postsToShow = showAll ? blogPosts : blogPosts.slice(0, 3);
+    // Sort posts by date (newest first) and then slice for display
+    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    const postsToShow = showAll ? sortedPosts : sortedPosts.slice(0, 3);
 
     return (
         <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-16 px-2 sm:px-4 md:px-8">
