@@ -36,7 +36,7 @@ export const projects: Project[] = [
    description: "A complete recreation of the classic PONG game built from scratch using SFML for graphics and input handling.",
    techStack: ["C++", "SFML", "Game Development"],
    repo: "https://github.com/henzg/Pong",
-   image: "/placeholder.png" 
+   image: "/pong.png" 
   },
   {
    title: "RTS Game in Unreal Engine",
