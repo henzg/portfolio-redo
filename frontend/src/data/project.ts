@@ -29,7 +29,7 @@ export const projects: Project[] = [
    description: "Learning modern OpenGL techniques for real-time 3D graphics rendering and shader programming.",
    techStack: ["C++", "OpenGL", "GLFW", "GLM"],
    repo: "https://github.com/henzg/LearningOpenGL",
-   image: "/openglproject.png" 
+   image: "/openglproject02.png" 
   },
   {
    title: "PONG Game",
