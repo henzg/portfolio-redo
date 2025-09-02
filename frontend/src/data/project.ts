@@ -26,10 +26,10 @@ export const projects: Project[] = [
   },
   {
    title: "OpenGL Graphics Engine",
-   description: "Learning modern OpenGL techniques for real-time 3D graphics rendering and shader programming.",
+   description: "Creating a graphics engine for 2d and 3d applications",
    techStack: ["C++", "OpenGL", "GLFW", "GLM"],
-   repo: "https://github.com/henzg/LearningOpenGL",
-   image: "/openglproject02.png" 
+   repo: "https://github.com/henzg/OpenGLRenderer",
+   image: "/openglproject03.png" 
   },
   {
    title: "PONG Game",
