@@ -272,5 +272,40 @@ This zoom system forms a solid foundation for the complete RTS camera experience
         date: "2024-03-20",
         tags: ["Unreal Engine 5", "Blueprints", "Camera System", "RTS", "Game Development"],
         readTime: "6 min read"
-    }
+    },
+    {
+    id: "opengl-renderer-update",
+    title: "Building My Own OpenGL Renderer",
+    excerpt: "It's been awhile since my last update! I've shifted gears from 3D experiments to creating my own OpenGL renderer with tests for 2D and 3D rendering.",
+    content: `
+# Building My Own OpenGL Renderer
+
+It's been awhile since my last update! I've still been working on projects behind the scenes, but my focus has shifted from general 3D experiments to something I've wanted to tackle for a while — building my own renderer from scratch.
+
+## Where Things Stand
+
+Right now, I've got a working renderer that can handle some simple but exciting tests:
+- **2D Shapes**: Rendering basic primitives like triangles and squares
+- **3D Cube**: A test scene with a cube that I can spin around
+- **ImGui Integration**: A menu system that lets me switch between these different test cases
+
+It might not sound like much at first glance, but wiring everything together — the pipeline, buffers, shaders, and UI — has been a big step forward. It's starting to feel like a real tool I can build on.
+
+## What's Next
+
+I'm setting my sights on a few ambitious goals:
+- **Lighting**: Adding real-time lighting to bring more depth and realism to the scenes
+- **Ray Tracing**: I want to dive into this sooner rather than later, even if it's just a basic prototype to start with
+- **More Features**: Things like textures, camera controls, and expanded test scenes are all on the roadmap
+
+## Why This Matters
+
+For me, this project is about more than just drawing shapes. It's about understanding the building blocks of graphics programming at a deeper level. Each new feature teaches me something about how real engines work under the hood.
+
+I'll keep sharing updates as I make progress, and hopefully soon I'll have some cool lighting demos and early ray tracing experiments to show off. Thanks for following along with this journey — it's only just getting started!
+    `,
+    date: "2025-09-02",
+    tags: ["OpenGL", "C++", "Renderer", "Graphics Programming", "Dev Log"],
+    readTime: "4 min read"
+}
 ]; 
