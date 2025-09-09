@@ -44,5 +44,12 @@ export const projects: Project[] = [
    techStack: ["C++", "Unreal Engine 5", "Blueprints", "Game Design"],
    repo: "https://github.com/henzg/ue5_rtscamera/tree/main",
    image: "/rtspic1.png"
-  },        
+  },
+  {
+    title: "Raytracing in a Weekend",
+    description: "Learning how raytracing works at a high-ish level with RT in a weekend book!",
+    techStack: ["C++", "NVIM", "G++", "Linux"],
+    repo: "https://github.com/henzg/Raytracing-in-a-Weekend",
+    image: "/rtrender01"
+  },
 ];
