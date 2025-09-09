@@ -50,6 +50,6 @@ export const projects: Project[] = [
     description: "Learning how raytracing works at a high-ish level with RT in a weekend book!",
     techStack: ["C++", "NVIM", "G++", "Linux"],
     repo: "https://github.com/henzg/Raytracing-in-a-Weekend",
-    image: "/rtrender01"
+    image: "/rtrendercomplete.png"
   },
 ];
