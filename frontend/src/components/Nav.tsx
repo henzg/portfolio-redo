@@ -31,7 +31,6 @@ export default function Nav() {
       <a href="#about" className="font-semibold text-lg hover:text-[var(--color-accent-coral)] transition">About</a>
       <a href="#projects" className="font-semibold text-lg hover:text-[var(--color-accent-coral)] transition">Projects</a>
       <a href="#blog" className="font-semibold text-lg hover:text-[var(--color-accent-coral)] transition">Blog</a>
-      <a href="#contact" className="font-semibold text-lg hover:text-[var(--color-accent-coral)] transition">Contact</a>
     </nav>
   );
 }

@@ -2,7 +2,7 @@ import { FaBriefcase, FaGamepad, FaCode, FaTools } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-16 px-2 sm:px-4 md:px-8">
+    <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-16 px-2 sm:px-4 md:px-8 border-t border-[var(--color-card-border)]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_0.05fr_1fr] gap-x-8 gap-y-10 md:gap-x-16 md:gap-y-12 items-start">
         {/* Left: About Text */}
         <div>
