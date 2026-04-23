@@ -17,13 +17,6 @@ export const projects: Project[] = [
     image: "/PortfolioPic.PNG"
   },
   {
-    title: "Stock Market Dashboard",
-    description: "A web application for creating stock portfolios with live trading data and real-time updates.",
-    techStack: ["Next.js", "TypeScript", "Node.js", "Docker"],
-    repo: "https://github.com/henz/StockDashboardv2",
-    image: "/StockDashBoard.PNG"
-  },
-  {
    title: "OpenGL Graphics Engine",
    description: "Creating a graphics engine for 2d and 3d applications",
    techStack: ["C++", "OpenGL", "GLFW", "GLM"],

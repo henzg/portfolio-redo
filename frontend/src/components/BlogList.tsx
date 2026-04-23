@@ -13,7 +13,10 @@ export default function BlogList({ showAll = false }: BlogListProps) {
     return (
         <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-12 px-2 sm:px-4 md:px-8">
             <div className="section-fade max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold mb-12 text-center text-[var(--color-primary)]">
+                <p className="text-xs font-mono tracking-widest uppercase text-[var(--color-accent-coral)] opacity-75 mb-3 text-center">
+                    03 — Dev Log
+                </p>
+                <h2 className="text-4xl font-bold mb-8 text-center text-[var(--color-primary)]">
                     Game Dev Log
                 </h2>
                 <p className="text-lg text-center mb-12 text-[var(--color-accent-black)] opacity-80 max-w-3xl mx-auto">
