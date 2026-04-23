@@ -31,6 +31,13 @@ export const projects: Project[] = [
    image: "/shaderart.png" 
   },
   {
+   title: "Nova Renderer V2",
+   description: "A redesigned OpenGL rendering engine with a modular architecture, ImGui debug UI for real-time parameter editing, and improved shader and scene management.",
+   techStack: ["C++", "OpenGL", "GLFW", "GLM", "ImGui", "CMake"],
+   repo: "https://github.com/henzg/Renderer-V2",
+   image: "/RendererV2.png"
+  },
+  {
    title: "PONG Game",
    description: "A complete recreation of the classic PONG game built from scratch using SFML for graphics and input handling.",
    techStack: ["C++", "SFML", "Game Development"],

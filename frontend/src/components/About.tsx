@@ -25,8 +25,8 @@ export default function About() {
             <li className="flex items-start gap-3">
               <FaBriefcase className="text-[var(--color-accent-coral)] text-xl mt-1" />
               <div>
-                <p className="font-semibold">Platform Engineer</p>
-                <p className="secondary-text">Managed deployments, built REST integrations, and maintained a risk application.</p>
+                <p className="font-semibold">Software Engineer — Blended Realities LLC</p>
+                <p className="secondary-text">Designed .NET backend infrastructure for a mixed reality platform — Blazor portal, REST APIs, and PostgreSQL containerized with Docker, with CI/CD automation through Azure DevOps.</p>
               </div>
             </li>
             <li className="flex items-start gap-3">
