@@ -13,10 +13,11 @@
         --color-shadow: 0 4px 24px rgba(0,0,0,0.08);
         --color-bg-gradient: linear-gradient(135deg, #2f4eb1 0%, #4169e1 100%);
         --font-main: 'Inter', 'Lato', 'Open Sans', Arial, sans-serif;
+        --font-mono: 'Courier New', monospace;
         --color-accent-coral: #ffb385;
     }
     body {
-        font-family: var(--font-main);
+        font-family: var(--font-geist-sans), var(--font-main);
         background: var(--color-bg-gradient);
         color: var(--color-text-light);
         min-height: 100vh;

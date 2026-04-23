@@ -33,8 +33,10 @@ export default function Contact() {
         {/* Right: Contact Form */}
         <form className="space-y-6 bg-white/80 rounded-2xl shadow-lg p-6 sm:p-8 border border-[var(--color-card-border)] backdrop-blur-sm">
           <div>
-            <label className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Name</label>
+            <label htmlFor="contact-name" className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Name</label>
             <input
+              id="contact-name"
+              name="name"
               type="text"
               className="w-full px-4 py-2 border border-[var(--color-card-border)] rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] bg-[var(--color-accent-white)] text-[var(--color-accent-black)] transition"
               placeholder="Your name"
@@ -42,8 +44,10 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Email</label>
+            <label htmlFor="contact-email" className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Email</label>
             <input
+              id="contact-email"
+              name="email"
               type="email"
               className="w-full px-4 py-2 border border-[var(--color-card-border)] rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] bg-[var(--color-accent-white)] text-[var(--color-accent-black)] transition"
               placeholder="you@example.com"
@@ -51,8 +55,10 @@ export default function Contact() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Message</label>
+            <label htmlFor="contact-message" className="block text-sm font-medium text-[var(--color-accent-black)] mb-1">Message</label>
             <textarea
+              id="contact-message"
+              name="message"
               rows={5}
               className="w-full px-4 py-2 border border-[var(--color-card-border)] rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] bg-[var(--color-accent-white)] text-[var(--color-accent-black)] transition"
               placeholder="Your message..."

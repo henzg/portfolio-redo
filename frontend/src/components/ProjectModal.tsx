@@ -1,3 +1,5 @@
+"use client"
+import { useEffect } from 'react';
 import { Project } from '../data/project';
 
 type Props = {
@@ -6,12 +8,29 @@ type Props = {
 }
 
 export default function ProjectModal({ project, onClose }: Props) {
+    useEffect(() => {
+        const handleKey = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') onClose();
+        };
+        document.addEventListener('keydown', handleKey);
+        return () => document.removeEventListener('keydown', handleKey);
+    }, [onClose]);
+
     return (
-        <div className='modal'>
-            <div className='modal-content relative'>
+        <div
+            className='modal'
+            onClick={onClose}
+            role="dialog"
+            aria-modal="true"
+            aria-label={project.title}
+        >
+            <div
+                className='modal-content relative'
+                onClick={(e) => e.stopPropagation()}
+            >
                 <button
                     onClick={onClose}
-                    className = "modal-close absolute top-4 right-4 text-3xl font-bold focus:outline-none transition-transform duration-150 hover:scale-125 hover:text-[var(--color-accent-coral)]"
+                    className="modal-close absolute top-4 right-4 text-3xl font-bold focus:outline-none transition-transform duration-150 hover:scale-125 hover:text-[var(--color-accent-coral)]"
                     aria-label="Close"
                 >
                     &times;
@@ -23,7 +42,7 @@ export default function ProjectModal({ project, onClose }: Props) {
                 </p>
                 <div className="flex gap-4 mt-2">
                     {project.repo && (
-                        <a 
+                        <a
                             href={project.repo}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -34,7 +53,7 @@ export default function ProjectModal({ project, onClose }: Props) {
                     )}
                     {project.demo && (
                         <a
-                            href = {project.demo}
+                            href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
                             className='btn-secondary font-semibold shadow'
