@@ -47,7 +47,7 @@ export default function About() {
               <FaTools className="text-[var(--color-primary)] text-xl mt-1" />
               <div>
                 <p className="font-semibold">Favorite Technologies</p>
-                <p className="secondary-text">C++, OpenGL, Unreal Engine, Visual Studio, Python,SQL</p>
+                <p className="secondary-text">C++, OpenGL, Unreal Engine, Visual Studio, Python, SQL</p>
               </div>
             </li>
           </ul>

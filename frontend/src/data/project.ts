@@ -21,7 +21,6 @@ export const projects: Project[] = [
     description: "A web application for creating stock portfolios with live trading data and real-time updates.",
     techStack: ["Next.js", "TypeScript", "Node.js", "Docker"],
     repo: "https://github.com/henz/StockDashboardv2",
-    demo: "Coming soon",
     image: "/StockDashBoard.PNG"
   },
   {

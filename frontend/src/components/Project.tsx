@@ -17,7 +17,7 @@ export default function Projects() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-6xl px-0 sm:px-2">
                 { projects.map((project, i ) => (
-                    <ProjectCard key={i} project={project} onClick={() => setSelected(project)} />
+                    <ProjectCard key={project.title} project={project} onClick={() => setSelected(project)} />
                 ))}
             </div>
             {selected && <ProjectModal project={selected} onClose={() => setSelected(null)} />}
