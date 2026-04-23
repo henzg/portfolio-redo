@@ -307,5 +307,63 @@ I'll keep sharing updates as I make progress, and hopefully soon I'll have some 
     date: "2025-09-02",
     tags: ["OpenGL", "C++", "Renderer", "Graphics Programming", "Dev Log"],
     readTime: "4 min read"
+},
+{
+    id: "nova-renderer-v2",
+    title: "Nova Renderer V2 — Starting Over the Right Way",
+    excerpt: "Yeah, I've been quiet for a while. But I haven't stopped building. Here's what I've been working on — a ground-up rewrite of my OpenGL renderer with a real architecture this time.",
+    content: `
+# Nova Renderer V2 — Starting Over the Right Way
+
+Okay, it's been a while. A long while. Between starting a new job and life generally doing its thing, the dev logs took a back seat. But the projects didn't stop — they just got a little less documented. Trying to fix that now.
+
+So here's what I've actually been spending my free time on: a full rewrite of my OpenGL renderer. I'm calling it **Nova**.
+
+## Why Rewrite It?
+
+The first renderer worked. It could draw shapes, spin a cube, swap between scenes with ImGui. But honestly, it was a mess under the hood. Everything was tangled together — the window setup, the render logic, the test scenes, all living in the same few files. It was fine for learning, but the moment I wanted to add something new I'd end up breaking three other things.
+
+The V2 rewrite was really about asking myself: *if I were building a real engine, how would I actually structure this?*
+
+## The Architecture Split
+
+The biggest change in Nova is the separation between the **engine** and the **application**. There are now two distinct pieces:
+
+- **Nova** — the core engine library. Handles the OpenGL context, windowing via GLFW, the render loop, shader management, logging, and anything else that should be reusable
+- **Sandbox** — a test application that sits on top of Nova. This is where I write scenes and experiments without touching engine code
+
+This might sound simple, but it fundamentally changes how the project feels to work in. When I want to try something new, I open Sandbox. When something in the rendering pipeline needs to change, I go into Nova. The two don't bleed into each other anymore.
+
+## Better Tooling Throughout
+
+One thing I've been more deliberate about this time is the tooling around the project:
+
+**CMake** is now the build system, which means the project actually builds the same way on any machine. Dependencies like GLM, spdlog, and ImGui are all pulled in as git submodules, so there's no manually copying files around.
+
+**spdlog** replaced my previous printf-everywhere approach to logging. Now I have proper log levels, colored terminal output, and it's easy to see what the engine is actually doing at runtime.
+
+**clangd + clang-format** are set up for the whole project. I got tired of inconsistent formatting, so now the style is enforced. Small thing, but it makes the codebase feel more like something you'd actually want to work in.
+
+## ImGui Gets an Upgrade
+
+The original renderer used a basic ImGui setup. Nova uses the **docking branch** of ImGui, which unlocks a much more capable debug UI — panels that can be detached, rearranged, and docked together like a real editor. It's closer to what you'd see in an actual game engine.
+
+Right now I'm using it for scene controls and render stats, but the goal is to build this out into something genuinely useful for debugging rendering issues.
+
+## Where Things Are Heading
+
+Nova is still early, but the foundation is solid in a way the first renderer never really was. The next things I want to tackle:
+
+- **Lighting** — point lights, directional lights, maybe a basic PBR setup eventually
+- **Render passes** — proper separation between geometry, lighting, and post-processing
+- **Camera system** — a real free-look camera built into the engine, not hacked together per-scene
+
+I'm not putting a timeline on any of this. I've learned that announcing what I'm going to do and then not doing it is worse than just shipping it quietly and writing about it after. So I'll see you in the next one.
+
+Thanks for sticking around.
+    `,
+    date: "2026-04-23",
+    tags: ["OpenGL", "C++", "Nova", "Renderer", "Architecture", "Dev Log"],
+    readTime: "5 min read"
 }
 ]; 

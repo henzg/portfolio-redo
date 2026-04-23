@@ -11,8 +11,8 @@ export default function BlogList({ showAll = false }: BlogListProps) {
     const postsToShow = showAll ? sortedPosts : sortedPosts.slice(0, 3);
 
     return (
-        <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-16 px-2 sm:px-4 md:px-8 border-t border-[var(--color-card-border)]">
-            <div className="max-w-6xl mx-auto">
+        <section className="bg-[var(--color-accent-cream)] text-[var(--color-accent-black)] py-12 px-2 sm:px-4 md:px-8">
+            <div className="section-fade max-w-6xl mx-auto">
                 <h2 className="text-4xl font-bold mb-12 text-center text-[var(--color-primary)]">
                     Game Dev Log
                 </h2>
