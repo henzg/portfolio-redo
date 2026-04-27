@@ -1,0 +1,31 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#162050"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="260" y1="180" x2="940" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F75FF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FF6B35" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#4F75FF">
+    <path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200M0 420H1200M0 490H1200M0 560H1200M0 630H1200"/>
+    <path d="M100 0V700M200 0V700M300 0V700M400 0V700M500 0V700M600 0V700M700 0V700M800 0V700M900 0V700M1000 0V700M1100 0V700"/>
+  </g>
+  <rect x="230" y="150" width="740" height="400" rx="20" fill="#0F172A" stroke="#2A3A64" stroke-width="2"/>
+  <rect x="230" y="150" width="740" height="46" rx="20" fill="#111C34"/>
+  <circle cx="266" cy="173" r="7" fill="#FF6B35"/>
+  <circle cx="290" cy="173" r="7" fill="#F59E0B"/>
+  <circle cx="314" cy="173" r="7" fill="#10B981"/>
+  <rect x="260" y="228" width="680" height="292" rx="12" fill="url(#accent)" opacity="0.55"/>
+  <g font-family="monospace" font-size="30" font-weight="700">
+    <text x="285" y="285" fill="#EEF0FF">&gt; dwarf_engine --run</text>
+    <text x="285" y="335" fill="#8B95B8">initializing core systems...</text>
+    <text x="285" y="385" fill="#8B95B8">loading module: logger</text>
+    <text x="285" y="435" fill="#8B95B8">loading module: memory</text>
+    <text x="285" y="485" fill="#4F75FF">status: ready</text>
+  </g>
+  <text x="600" y="620" text-anchor="middle" fill="#FF6B35" font-family="monospace" font-size="36" font-weight="700">DwarfEngine</text>
+</svg>

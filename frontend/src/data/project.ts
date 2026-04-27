@@ -31,18 +31,18 @@ export const projects: Project[] = [
    image: "/RendererV2.png"
   },
   {
+   title: "DwarfEngine",
+   description: "A lightweight C++ CLI engine playground where I build and test subsystems that will eventually feed into Nova.",
+   techStack: ["C++", "CLI", "CMake", "Engine Architecture"],
+   repo: "https://github.com/henzg/DwarfEngine",
+   image: "/DwarfEnginePlaceholder.svg"
+  },
+  {
    title: "PONG Game",
    description: "A complete recreation of the classic PONG game built from scratch using SFML for graphics and input handling.",
    techStack: ["C++", "SFML", "Game Development"],
    repo: "https://github.com/henzg/Pong",
    image: "/pong01.png" 
-  },
-  {
-   title: "RTS Game in Unreal Engine",
-   description: "Developing a real-time strategy game prototype with custom camera systems and game mechanics in UE5.",
-   techStack: ["C++", "Unreal Engine 5", "Blueprints", "Game Design"],
-   repo: "https://github.com/henzg/ue5_rtscamera/tree/main",
-   image: "/rtspic1.png"
   },
   {
     title: "Raytracing in a Weekend",
